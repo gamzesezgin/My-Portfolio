@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamze Sezgin | About Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body style="background-color: rgb(231, 231, 231);">
+    <div class="container fixed-top" style="background-color: rgb(88, 88, 88); max-width: 100%; height: 60px;">
+        <ul class="nav justify-content-end align-items-center" style="height: 100%;">
+            <li class="nav-item">
+            <a class="nav-link active title" aria-current="page" href="{% url 'home' %}" style="color: white;">Ana Sayfa</a>
+            </li>
+            <li class="nav-item title">
+            <a class="nav-link" href="{% url 'aboutme' %}" style="color: white;">Hakkımda</a>
+            </li>
+            <li class="nav-item title">
+            <a class="nav-link" href="{% url 'contact' %}" style="color: white;">İletişim</a>
+            </li>
+        </ul>
+    </div>
+    <!--About me -->
+    <div class="container">
+      <div class="container" style="margin: 120px;">
+          <div class="row" style="display: flex; align-items:center; margin-top: 70px; margin-left: -180px;">
+              <div class="col-md-9" style="font-size: 18px;">
+                  <h3>Hakkımda</h3>
+                  <br><br><br>
+                  <p>Merhaba! Ben Gamze Sezgin.
+                  <br><br>
+                  22 yaşındayım ve Yıldız Teknik üniversitesi Matematik Öğretmenliği son sınıf öğrencisiyim. Buna ek olarak İstanbul Üniversitesinde Yönetim Bilişim Sistemleri lisans eğitimi almaktayım ve 42 İstanbul Yazılım Okulu'nda ana eğitim öğrencisiyim. Python, Django, C, HTML, CSS, Bootstrap, Git alanlarında kendimi geliştirdim. Python ve Django kullanarak Websiteleri tasarlıyorum. Sıradaki hedefim Javascript öğrenerek daha kullanışlı web arayüzleri oluşturmak ve python ile backend kısmını geliştirmek. </p>
+              </div>
+              <div class="col-md-3">
+                  <img src="{% static 'images/profile.png' %}" class="softlanguage p-2 mt-5">
+              </div>
+          </div>
+      </div>
+        <div class="container card-deck" style="margin-top: 350px;">
+            <div class="card shadow-lg p-2" style="border-radius: 20%; margin-bottom: 30px; margin-top: -30px;">
+              <img src="{% static 'images/ytü.png' %}" class="card-img-top" alt="yildizteknik" style="width: 180px; height: 180px; margin-left: 22%;">
+              <div class="card-body">
+                <h5 class="card-title">Yıldız Teknik Üniversitesi</h5>
+                <p class="card-text">Matematik Öğretmenliği 4.sınıf öğrencisi olarak eğitimime devam etmekteyim.</p>
+                  <p class="card-text"><small class="text-muted">2020 - 2024</small></p>
+              </div>
+            </div>
+            <div class="card shadow-lg p-2" style="border-radius: 20%; margin-bottom: 30px; margin-top: -30px; margin-left: 10px;">
+              <img src="{% static 'images/42istanbul.jpg' %}" class="card-img-top" alt="42istanbul" style="margin-bottom:0; width:300px; height: 180px; border-radius: 50%;" >
+              <div class="card-body">
+                <h5 class="card-title">Ecole 42</h5>
+                <p class="card-text">Temmuz 2023 havuz eğitimini başarı ile tamamlayarak ana eğitime geçmeye hak kazandım.</p>
+                <p class="card-text"><small class="text-muted">Temmuz 2023'den beri</small></p>
+              </div>
+            </div>
+            <div class="card shadow-lg p-2" style="border-radius: 20%; margin-bottom: 30px; margin-top: -30px;">
+              <img src="{% static 'images/istanbulüni.png' %}" class="card-img-top" alt="istanbulüniversitesi" style="width: 180px; height: 180px; margin-left: 22%;">
+              <div class="card-body">
+                <h5 class="card-title">İstanbul Üniversitesi</h5>
+                <p class="card-text">Yönetim Bilişim Sistemleri</p><br><br><br>
+                <p class="card-text"><small class="text-muted">2022 - 2025</small></p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>

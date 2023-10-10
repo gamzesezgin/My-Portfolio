@@ -1,0 +1,52 @@
+
+.container {
+    position: relative;
+}
+
+.container img {
+    max-width: 100%; /* Görüntüyü konteynerin genişliğine sığacak şekilde ölçekle */
+    height: auto; /* Dikey boyutu orijinal oranıyla koru */
+  }
+
+h1 {
+    color: rgb(163, 0, 27); 
+}
+
+.title {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    float: left;
+}
+
+h3 {
+    color: rgb(163, 0, 27);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    float: left;
+
+}
+
+h6 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    float: left;
+
+}
+p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+} 
+
+.softlanguage {
+    width: 400px;
+    height: 400px;
+    border: 40%;
+}
+
+.flexible-gif {
+    max-width: 100%; /* En fazla sayfa genişliği kadar ölçekle */
+    height: auto; /* Dikey boyutu orijinal oranıyla koru */
+    display: block; /* Dikey hizalamayı düzeltmek için */
+    margin: 0 auto; /* Yatayda ortala */
+    border-radius: 50%; /* Yuvarlak görünüm sağla */
+}

@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamze Sezgin | Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body style="background-color: rgb(231, 231, 231);">
+    <div class="container fixed-top" style="background-color: rgb(88, 88, 88); max-width: 100%; height: 60px;">
+        <ul class="nav justify-content-end align-items-center" style="height: 100%;">
+            <li class="nav-item">
+            <a class="nav-link active title" aria-current="page" href="{% url 'home' %}" style="color: white;">Ana Sayfa</a>
+            </li>
+            <li class="nav-item title">
+            <a class="nav-link" href="{% url 'aboutme' %}" style="color: white;">Hakkımda</a>
+            </li>
+            <li class="nav-item title">
+            <a class="nav-link" href="{% url 'contact' %}" style="color: white;">İletişim</a>
+            </li>
+        </ul>
+    </div>
+    <!--Contact-->
+    <div class="container">
+        <div class="container" style="margin-left: 82px">
+            <div class="row" style="margin-top: 70px; margin-left: -150px;">
+                <div class="col-md-7" style="margin-top: 70px;">
+                    <h3>İletişim</h3><br><br><br>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Mail Adresi</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="mail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesaj</label>
+                            <textarea id="message" class="form-control" name="message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Gönder</button>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <img src="{% static 'images/mail.png' %}">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-left:-60px;">
+                <div class="col-md-12">
+                    <a href="https://www.linkedin.com/in/gamze-sezgin-9b497922a/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="35" height="35" alt="linkedin logo"/></a>
+                    <a href="https://github.com/gamzesezgin" alt="Github link"><svg height="35" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="35" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default">
+                    <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg></a>
+                    <a href= "https://www.instagram.com/gamze_sezgnn/"><img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="35" height="35" alt="instagram logo"/></a>
+                    <a href="https://discord.com/users/gamzesezgin"><img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg" width="35" height="35" alt="discord logo" /></a><br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
