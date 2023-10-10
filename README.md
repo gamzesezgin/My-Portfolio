@@ -1,5 +1,5 @@
 # My-Portfolio
-![Anasayfa](../images/ss1.png)
-![Hakkımda](../images/ss2.png)
-![Hakkımda](../images/ss3.png)
-![Contact](../images/ss4.png)
+![Anasayfa](staticfiles/images/ss1.png)
+![Hakkımda](staticfiles/images/ss2.png)
+![Hakkımda](staticfiles/images/ss4.png)
+![Contact](staticfles/images/ss3.png)
